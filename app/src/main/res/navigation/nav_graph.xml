@@ -3,7 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/workspaceFragment">
+    app:startDestination="@id/loginFragment">
+<!--  Login screen credit: https://chatgpt.com/g/g-p-6ac5dc26195c8191a59deeaee4df1b45  -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="edu.ucsc.cse118.assignment2.ui.LoginFragment"
+        android:label="Login" >
+
+        <action
+            android:id="@+id/action_loginFragment_to_workspaceFragment"
+            app:destination="@id/workspaceFragment"
+            />
+        </fragment>
 
     <fragment
         android:id="@+id/workspaceFragment"

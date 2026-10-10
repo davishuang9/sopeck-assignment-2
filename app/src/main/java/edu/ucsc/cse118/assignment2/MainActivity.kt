@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     try {
       val jsonText = resources.openRawResource(R.raw.workspaces)
         .bufferedReader()
-        .use {it.readText()}
+        .use { it.readText() }
 
       // convert JSON to kotlin objects
       val workspaces = Json.decodeFromString<List<Workspace>>(jsonText)
